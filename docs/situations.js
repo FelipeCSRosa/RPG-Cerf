@@ -55,6 +55,90 @@ const data = {
                     }
                 }
             ]
+        },
+        {
+            "id": 2,
+            "description": "Você está andando por uma floresta numa noite tranquila quando aparece na sua frente o senhor do caos e da morte, Anthrax",
+            "options": [
+                {
+                    "description": "Correr",
+                    "fail": {
+                        "damage": 10000,
+                        "description": "Você não pode correr de Anthrax, ele invade sua mente e você esta morto antes de qualquer chance de reação"
+                    },
+                    "success": {
+                        "damage": 0,
+                        "description": "Você acorda"
+                    }
+                },
+                {
+                    "description": "Correr",
+                    "fail": {
+                        "damage": 10000,
+                        "description": "Você não pode correr de Anthrax, ele invade sua mente e você esta morto antes de qualquer chance de reação"
+                    },
+                    "success": {
+                        "damage": 0,
+                        "description": "Você acorda"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "description": "Você está numa taverna numa pacata cidade de camponeses quando um grupo de bandidos invade o lugar",
+            "options": [
+                {
+                    "description": "Enfrentar os bandidos",
+                    "fail": {
+                        "damage": 80,
+                        "description": "Você toma uma surra dos bandidos até desmais ficando extremamente ferido"
+                    },
+                    "success": {
+                        "damage": 20,
+                        "description": "Você derrota os bandidos sozinho e é ganha bebida de graça durante a noite toda"
+                    }
+                },
+                {
+                    "description": "Fugir",
+                    "fail": {
+                        "damage": 30,
+                        "description": "Eles percebem sua tentativa de fuga, mas por sorte só te bate o suficiente pra roubar seus pertencer"
+                    },
+                    "success": {
+                        "damage": 20,
+                        "description": "Você consegue escapar, aqueles camponeses bêbados não era problema seu mesmo"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "description": "Você caminha pelo deserto quando um enxame de mosquitos gigantes começa vir em sua direção",
+            "options": [
+                {
+                    "description": "Espantar os mosquitos",
+                    "fail": {
+                        "damage": 100,
+                        "description": "Os mosquitos gigantes te atacam e sugam muito do seu sangue"
+                    },
+                    "success": {
+                        "damage": 20,
+                        "description": "Você coloca foco em no seu mapa e espanta os mosquitos"
+                    }
+                },
+                {
+                    "description": "Corres até um lugar com água",
+                    "fail": {
+                        "damage": 100,
+                        "description": "Você está no deserto, não tem água, os mosquitos gigantes te atacam e sugam muito do seu sangue"
+                    },
+                    "success": {
+                        "damage": 30,
+                        "description": "Por sorte você encontra um Oásis com um lago e pula la dentro, se refrescando enquanto os mosquitos vão embora"
+                    }
+                }
+            ]
         }
     ]
 }
