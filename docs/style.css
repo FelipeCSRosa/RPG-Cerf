@@ -6,21 +6,30 @@ body {
     background: #000;
     color: #fff;
     font-family: 'VT323', monospace;
+
+    background-repeat: no-repeat;
 }
 
 /* Header */
 
-.header-list {
+.header{
     display: flex;
     justify-content: center;
+}
+
+.header-list {
+    display: flex;
+    justify-content: space-around;
     gap: 16px;
     padding: 0;
+    width: 80%;
+    max-width: 1000px;
 }
 
 .header-list .header-list-item {
     list-style-type: none;
     font-size: 32px;
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
 }
 
 .header-list .header-list-item:hover {
@@ -62,7 +71,7 @@ body {
 .play-area .play-button {
     font-size: 24px;
     padding: 8px 16px;
-    border: 1px solid #fff;
+    border: 3px solid #fff;
 }
 
 .play-area .play-button a {
@@ -119,11 +128,11 @@ label .input-text{
     color: #fff;
 }
 
-.input-form button, button{
+button{
     margin-top: 32px;
     background: #000;
     border: 3px solid #fff;
-    padding: 0px 32px;
+    padding: 8px 32px;
     color: #fff;
     font-family: 'VT323', monospace;
     font-size: 24px;
@@ -142,7 +151,6 @@ button:hover{
 }
 
 .hud{
-    width: 100vw;
     display: flex;
     justify-content: center;
 }
@@ -151,11 +159,62 @@ button:hover{
     display: flex;
     justify-content: space-between;
     width: 80%;
-    max-width: 900px;
+    max-width: 1000px;
 }
 
 @media screen and (min-width: 768px) {
     .rpg-zone p{
         font-size: 24px;
     }
+
+    body{
+        background-size: cover;
+    }
+}
+
+.situation{
+    display: flex;
+    justify-content: center;
+}
+
+.situation-inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-width: 1000px;
+}
+
+.situation-inner-options{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.playerOptions-buttons{
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 80%;
+    max-width: 1000px;
+}
+
+@media screen and (min-width: 768px) {
+    .situation-inner-options, .playerOptions-buttons{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+.results{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.results button {
+    width: fit-content;
 }
