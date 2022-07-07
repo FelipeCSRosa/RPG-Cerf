@@ -7,7 +7,10 @@ body {
     color: #fff;
     font-family: 'VT323', monospace;
 
+
+    background-image: url('/src/bgER.jpg');
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* Header */
