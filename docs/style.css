@@ -7,10 +7,7 @@ body {
     color: #fff;
     font-family: 'VT323', monospace;
 
-
-    background-image: url('https://felipecsrosa.github.io/RPG-Cerf/ser/bgER.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url('./src/bg.webp');
 }
 
 /* Header */
